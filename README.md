@@ -54,6 +54,5 @@ Bookbot is a CLI tool written in Python designed to analyze text documents. This
 - `print_report()`: Prints the analysis report.
 - `get_book_text()`: Reads and returns the text from the specified file.
 - `get_num_words()`: Returns the total number of words in the text.
-- `get_string_count()`: Returns a dictionary with the frequency of each character in the text.
-- `least_used_char()`: Returns the least used character and its frequency.
-- `most_used_char()`: Returns the most used character and its frequency.
+- `sort_on()`: Helper function to sort the character frequency list.
+- `get_string_count()`: Returns a sorted list of dictionaries with the frequency of each character.

@@ -37,9 +37,10 @@ def get_string_count(text):
     str_lst = []
     for word in text.split():
         for char in word.lower():
-            if char not in str_dict:
+            if (char not in str_dict) and char.isalpha():
                 str_dict[char] = 1
-            str_dict[char] += 1
+            elif char.isalpha():
+                str_dict[char] += 1
 
     for key in str_dict:
         str_lst.append({ 'key' : key , 'count': str_dict[key] })
